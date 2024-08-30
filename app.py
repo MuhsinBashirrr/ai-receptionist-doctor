@@ -85,7 +85,7 @@ class AIReceptionist:
 
             emergency_response = getattr(self.database_thread, 'result', 
                 "Please follow basic first aid procedures.")
-            return f"{response} Meanwhile, we suggest that you {emergency_response}. For more details, please visit [this guide](https://example.com/cpr-guide)."
+            return f"{response} Meanwhile, we suggest that you {emergency_response}"
 
         # Handle message state
         elif self.state == State.MESSAGE:
